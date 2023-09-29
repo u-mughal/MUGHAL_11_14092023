@@ -1,0 +1,26 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 68px;
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+  height: 34px;
+}
+a {
+  color: #ff6060;
+  font-size: 24px;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.active {
+  text-decoration-line: underline;
+}
