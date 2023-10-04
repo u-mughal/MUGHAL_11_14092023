@@ -10,15 +10,13 @@ import Footer from '@/Layouts/Footer/Footer'
 // fonction d'appel du Layout.
 const Layout = () => {
     return (
-
-        <div className='layout'>
-            <Header />
-            <main>
-                <Outlet />
-            </main>
-            <Footer />
-        </div>
-
+            <div className='layout'>
+                <Header />
+                <main>
+                    <Outlet />
+                </main>
+                <Footer />
+            </div>
     );
 };
 
