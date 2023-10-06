@@ -1,3 +1,5 @@
+// Description: Page d'accueil du site
+
 // import des modules nécessaires
 import '@/Pages/Public/Home/Home.css'
 
@@ -9,5 +11,4 @@ const Home = () => {
         </div>
     );
 };
-
 export default Home;
