@@ -1,11 +1,10 @@
 // import des modules nécessaires
-import 'normalize.css';
+import '@/Assets/Css/normalize.css';
 import '@/Assets/Css/App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import PublicRouter from '@/Pages/Public/PublicRouter.jsx';
 
-// création du routage principal.
 const App = () => {
 
     return (
@@ -19,5 +18,4 @@ const App = () => {
     );
 }
 
-// export de la fonction app pour appel dans l'index.
 export default App;

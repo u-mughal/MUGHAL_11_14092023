@@ -2,25 +2,50 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
-  height: 68px;
-  margin-top: 20px;
-  margin-left: 100px;
+  margin-top: 57px;
+}
+
+
+header img {
+  height: 95%;
 }
 
 nav {
+  justify-content: flex-end;
   display: flex;
-  justify-content: space-between;
-  width: 20%;
-  height: 34px;
-}
-a {
-  color: #ff6060;
-  font-size: 24px;
-  text-decoration: none;
-  padding: 10px;
+  width: 100%;
 }
 
-.active {
-  text-decoration-line: underline;
+.navlink {
+  color: #ff6060;
+  margin-left: 40px;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.navlink:hover {
+  color: #000000;
+}
+
+
+@media only screen and (max-width : 640px) {
+
+  header {
+      margin-top: 30px;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: nowrap;
+  }
+
+  nav {
+      justify-content: flex-end;
+      display: flex;
+      width: 100%;
+  }
+
+  .navlink {
+      margin-left: 20px;
+  }
+
 }
