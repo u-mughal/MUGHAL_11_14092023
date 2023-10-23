@@ -1,22 +1,46 @@
+/**
+ * Service de gestion des logements.
+ *
+ * Ce module fournit des fonctions pour récupérer des informations sur les logements.
+ *
+ * @module LogementService
+ */
+
 /** Import des modules nécessaires */
 import ListeLogements from "@/Assets/Api/Logement.json";
 
-// fonction récuperation de tous les logements.
+/**
+ * Récupère la liste de tous les logements.
+ *
+ * @function
+ * @returns {array} Liste de tous les logements.
+ */
 let GetAllLogement = () => {
     return ListeLogements;
 }
 
-// fonction recupération d'un logement.
+/**
+ * Récupère un logement par ID.
+ *
+ * @function
+ * @param {number} id - L'identifiant du logement à récupérer.
+ * @returns {object|null} Le logement trouvé ou null s'il n'existe pas.
+ */
 let GetOneLogement = async (id) => {
     const OneLogement = await ListeLogements.find(logement => logement.id === id);
     return OneLogement;
 }
 
-// export des fonction pour les reutiliser dans les pages
+/**
+ * Export des fonctions pour les réutiliser dans les pages.
+ *
+ * @type {object}
+ * @property {function} GetAllLogement - Fonction de récupération de tous les logements.
+ * @property {function} GetOneLogement - Fonction de récupération d'un logement par ID.
+ */
 export const LogementService = {
     GetAllLogement,
     GetOneLogement
 }
 
-
-export default LogementService
+export default LogementService;

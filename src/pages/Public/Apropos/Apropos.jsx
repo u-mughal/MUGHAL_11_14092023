@@ -26,4 +26,6 @@ const Apropos = () => {
         </section>
     );
 };
+
+// Exportation du composant Apropos
 export default Apropos;
