@@ -1,3 +1,4 @@
+/* Logement Global */
 .logement{
   display: flex;
   flex-direction: column;
@@ -6,16 +7,177 @@
   margin-right: 20px;
 
 }
+/* Container_1 = Title, Location, Tags, Host info, Host Img, Rating */
+/* Div__title-loc-tag = Title, Location, Tags */
 .Container_1{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
+  align-items: stretch;
+  margin: 30px 0;
 }
-.title_loc_tag{
+.Div__title-loc-tag{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
+.Div__title-loc-tag .TLC_tag-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 20px;
+}
+.Div__title-loc-tag h1,.Div__title-loc-tag p{
+  margin: 0;
+  padding: 0;
+  color:#FF6060;
+}
+.Div__title-loc-tag h1{
+  font-size: 36px;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+.Div__title-loc-tag p{
+  font-size: 18px;
+  font-weight: 400;
+}
+/* Div__Host-rating = Host info, Host Img Rating */
+.Div__Host-rating{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.Host{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.Host h2{
+  text-align: end;
+  margin: 0;
+  padding: 0;
+  width: 75px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #FF6060;
+  line-height: 25px;
+}
+.Host img{
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.Div__Host-rating .Rating{
+  margin-top: 15px;
+}
+/* Container_2 = Description, Equipements*/
+.Container_2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 30px 0;
+  min-height: max-content;
+}
+.Container_2 .logement__description, .Container_2 .logement__equipements{
+  display: flex;
+  width: 47%;
+}
+
+/* --------- MEDIA QUERIES -------------- */
+@media screen and (max-width: 1024px) {
+  .Div__title-loc-tag h1{
+      text-align: left;
+      font-size: 28px;
+      width: 70%;
+  }
+
+  .Div__title-loc-tag .TLC_tag-row .Tag{
+      border-radius: 10px;
+  }
+  .Div__Host-rating{
+      justify-content: space-between;
+  }
+  
+}
+@media screen and (max-width: 640px) {
+  .Container_1{
+      flex-direction: column;
+      justify-content: center;
+      align-items: left;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+  .Div__title-loc-tag .TLC_tag-row{
+      margin-top: 15px;
+      gap: 5px;
+  }
+  .Div__title-loc-tag .TLC_tag-row .Tag{
+      font-size: 10px;
+      border-radius: 7px;
+  }
+  .Div__title-loc-tag h1{
+      font-size: 18px;
+      text-align: left;
+  }
+  .Div__title-loc-tag p{
+      margin-top: 5px;
+      font-size: 14px;
+  }
+  .Div__Host-rating{
+      margin-top: 20px;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .Host{
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      justify-content: flex-end;
+  }
+  .Host h2{
+      width: 50%;
+      font-size: 16px;
+  }
+  .Host img{
+      width: 50px;
+      height: 50px;
+  }
+  .Div__Host-rating .Rating{
+      margin-top: 0;
+      gap: 5px;
+      font-size: unset;
+  }
+  .Div__Host-rating .Rating label svg{
+      width: 20px;
+      height: 20px;
+  }
+
+
+  .Container_2{
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+  }
+  .Container_2 .logement__description, .Container_2 .logement__equipements{
+      width: 100%;
+  }
+  .Container_2 .logement__equipements,.Container_2 .logement__description{
+      margin: 0;
+      padding: 0;
+  }
+  .Container_2 .logement__description .Dropdown,.Container_2 .logement__equipements .Dropdown{
+      margin: 0;
+      padding: 0;
+      margin-bottom: 20px;
+  }
+  
 }
