@@ -1,4 +1,4 @@
-// Description: Page d'accueil du site
+import React, { useState } from 'react';
 import '@/Pages/Public/Apropos/Apropos.css';
 import imagebanner from '@/Assets/Images/Pages/Apropos/AproposBanner.png';
 import Banner from '@/Components/Banner/Banner';
@@ -6,9 +6,10 @@ import Dropdown from '@/Components/Dropdown/Dropdown';
 
 // fonction d'appel de la page d'accueil
 const Apropos = () => {
+    const [title] = useState([""]);
     return (
         <section className="Apropos">
-            <Banner image={imagebanner} title="" />
+            <Banner image={imagebanner} title={title} />
             <div className="Apropos-content">
                 <Dropdown
                     title="Fiabilité"
@@ -26,6 +27,4 @@ const Apropos = () => {
         </section>
     );
 };
-
-// Exportation du composant Apropos
 export default Apropos;
