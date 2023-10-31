@@ -1,0 +1,22 @@
+/* Styles pour le composant de notation (Rating) */
+
+/* Styles pour l'élément qui contient les évaluations (ratings) */
+.Rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; 
+  margin: 0;
+  padding: 0; 
+  list-style: none; 
+  font-size: 2rem; 
+  gap: 15px; 
+}
+
+/* Styles pour les éléments de texte (paragraphes) à l'intérieur de l'élément Rating */
+.Rating p {
+  margin: 0; 
+  padding: 0; 
+  font-size: 1rem; 
+  color: black; 
+}

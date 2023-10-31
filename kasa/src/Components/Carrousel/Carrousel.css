@@ -1,0 +1,83 @@
+/* Styles pour la classe .Carrousel */
+.Carrousel {
+  position: relative; /* Position relative pour les éléments enfants positionnés absolument */
+  top: 0%;
+  left: 0%;
+  min-width: 100%;
+  width: 100%;
+  height: 414px; /* Hauteur du carrousel */
+  overflow: hidden; /* Masquage du contenu en dehors du carrousel */
+  border-radius: 25px; /* Coins arrondis du carrousel */
+}
+
+/* Styles pour les images dans la classe .Carrousel .Slider_img */
+.Carrousel .Slider_img {
+  position: absolute; /* Position absolue pour positionner les images */
+  top: 0%;
+  left: 0%;
+  border-radius: 25px; /* Coins arrondis des images */
+  width: 100%;
+  height: 414px; /* Hauteur des images du carrousel */
+  object-fit: cover; /* Ajustement de l'image pour couvrir le carrousel */
+}
+
+/* Styles pour la classe .Carrousel .left-arrow */
+.Carrousel .left-arrow {
+  left: 0px; /* Positionnement à gauche */
+  justify-content: left; /* Justification du contenu à gauche */
+}
+
+/* Styles pour la classe .Carrousel .right-arrow */
+.Carrousel .right-arrow {
+  right: 0px; /* Positionnement à droite */
+  justify-content: right; /* Justification du contenu à droite */
+}
+
+/* Styles pour les éléments .left-arrow et .right-arrow */
+.Carrousel .left-arrow, .Carrousel .right-arrow {
+  position: absolute; /* Position absolue pour les flèches de navigation */
+  margin: 0;
+  padding: 0;
+  top: 0%;
+  width: 50%;
+  height: 100%;
+  cursor: pointer; /* Curseur change au survol pour indiquer une interaction */
+  background-color: transparent; /* Fond transparent */
+  border: none; /* Pas de bordure */
+  display: flex; /* Affichage en tant que flex container */
+  align-items: center; /* Alignement vertical au centre */
+  transition: all 0.3s ease-in-out; /* Transition douce pour les effets */
+}
+
+/* Styles pour les images dans les éléments .left-arrow et .right-arrow */
+.Carrousel .left-arrow img, .Carrousel .right-arrow img {
+  height: 20%; /* Hauteur des images des flèches de navigation */
+  min-width: 20px; /* Largeur minimale des images des flèches */
+  margin: 0 2%; /* Marge autour des images */
+}
+
+/* Styles pour l'élément .counter */
+.Carrousel .counter {
+  position: absolute; /* Position absolue en bas */
+  bottom: 0;
+  width: 100%;
+  color: #ffffff; /* Couleur du texte en blanc */
+}
+
+/* Styles pour les écrans avec une largeur maximale de 1024px */
+@media screen and (max-width: 1024px) {
+  .Carrousel .left-arrow img, .Carrousel .right-arrow img {
+    width: 13%; /* Ajustement de la largeur des images des flèches pour les écrans plus petits */
+  }
+}
+
+/* Styles pour les écrans avec une largeur maximale de 640px */
+@media screen and (max-width: 640px) {
+  .Carrousel {
+    height: 225px; /* Ajustement de la hauteur du carrousel pour les écrans plus petits */
+  }
+  .Carrousel .Slider_img {
+    height: 225px; /* Ajustement de la hauteur des images du carrousel pour les écrans plus petits */
+    object-fit: cover; /* Ajustement de l'image pour couvrir le carrousel */
+  }
+}

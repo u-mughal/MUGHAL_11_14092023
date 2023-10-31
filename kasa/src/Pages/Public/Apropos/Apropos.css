@@ -1,0 +1,15 @@
+/* Styles pour la classe .Apropos */
+
+.Apropos {
+  display: flex; 
+  flex-direction: column; 
+  align-content: flex-start; 
+  margin-left: 20px; 
+  margin-right: 20px; 
+}
+
+/* Styles pour les éléments de classe .banner à l'intérieur de .Apropos */
+
+.Apropos .banner {
+  height: 223px;
+}

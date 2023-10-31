@@ -1,0 +1,43 @@
+/* Styles pour la classe .home */
+.home {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Styles pour la classe .listelogements */
+.listelogements {
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px 50px;
+  padding: 45px 45px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  height: 100%;
+  list-style: none!important;
+}
+
+/* Styles spécifiques pour les écrans ayant une largeur maximale de 1024 pixels */
+@media screen and (max-width: 1024px) {
+  .listelogements {
+      background-color: unset;
+      gap: 20px 20px;
+      grid-template-columns: 1fr 1fr;
+      padding: 0px 0px;
+      margin-top: 22px;
+  }
+}
+
+/* Styles spécifiques pour les écrans ayant une largeur maximale de 640 pixels */
+@media screen and (max-width: 640px) {
+  .listelogements {
+      background-color: unset;
+      gap: 20px 0px;
+      grid-template-columns: 1fr;
+      padding: 0px 0px;
+      margin-top: 22px;
+  }
+}

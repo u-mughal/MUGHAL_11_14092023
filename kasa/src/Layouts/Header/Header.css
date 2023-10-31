@@ -1,0 +1,122 @@
+/* Styles pour la balise header */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Styles pour les éléments de classe .Header_Container à l'intérieur de la balise header */
+header .Header_Container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1240px;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+/* Styles pour les éléments de type a (liens) à l'intérieur de .Header_Container */
+.Header_Container a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+/* Styles pour les images (balises img) à l'intérieur de la balise header */
+header img {
+  height: 80%;
+}
+
+/* Styles pour la balise nav */
+nav {
+  justify-content: flex-end;
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+/* Styles pour les éléments de classe .navlink à l'intérieur de la balise nav */
+.navlink {
+  line-height: 35px;
+  color: #ff6060;
+  margin-left: 40px;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+/* Styles au survol des liens (.navlink) */
+.navlink:hover {
+  color: #000000;
+}
+
+/* Styles spécifiques pour les écrans ayant une largeur maximale de 1024 pixels */
+@media only screen and (max-width: 1024px) {
+  .navlink:hover {
+    color: #ff6060;
+  }
+}
+
+/* Styles spécifiques pour les écrans ayant une largeur maximale de 640 pixels */
+@media only screen and (max-width: 640px) {
+  header img {
+    width: auto;
+    height: 47px;
+  }
+
+  header {
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  nav {
+    justify-content: flex-end;
+    display: flex;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: relative;
+    top: 5px;
+  }
+
+  .navlink {
+    line-height: 25px;
+    margin-left: 15px;
+    font-size: 90%;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .navlink:hover {
+    color: #ff6060;
+  }
+}
+
+/* Styles spécifiques pour les écrans ayant une largeur maximale de 300 pixels */
+@media only screen and (max-width: 300px) {
+  header img {
+    width: auto;
+    height: 25px;
+  }
+
+  .navlink {
+    line-height: 25px;
+    margin-left: 10px;
+    font-size: 90%;
+    font-weight: 400;
+  }
+
+  .navlink:hover {
+    color: #ff6060;
+  }
+}

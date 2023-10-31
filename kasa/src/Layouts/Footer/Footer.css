@@ -1,0 +1,38 @@
+/* Styles pour la balise footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 210px;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* Styles pour les éléments de la classe .FooterContainer à l'intérieur du footer */
+footer div.FooterContainer a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* Styles pour les paragraphes (balises <p>) à l'intérieur du footer */
+footer p {
+  color: white;
+  margin: 0;
+  padding-top: 30px;
+}
+
+/* Styles pour les images (balises <img>) à l'intérieur du footer */
+footer img {
+  width: 122px;
+}
+
+/* Styles spécifiques pour les écrans ayant une largeur maximale de 640 pixels */
+@media only screen and (max-width: 640px) {
+  footer p {
+    font-size: 14px;
+  }
+}

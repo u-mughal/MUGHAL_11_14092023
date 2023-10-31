@@ -1,0 +1,45 @@
+/* Styles pour l'application globale */
+.App {
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Styles pour le logo de l'application */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* Styles pour l'animation du logo de l'application */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* Styles pour l'en-tête de l'application */
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Styles pour les liens dans l'application */
+.App-link {
+  color: #61dafb;
+}
+
+/* Animation de rotation du logo de l'application */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

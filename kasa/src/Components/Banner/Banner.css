@@ -1,0 +1,79 @@
+/* Styles pour les balises h1 et p imbriquées dans le même élément */
+h1 p {
+  padding: 0;
+  margin: 0;
+}
+
+/* Styles pour la classe .banner */
+.banner {
+  border-radius: 10px;
+  height: 225px;
+  position: relative;
+  width: 100%;
+}
+
+/* Styles pour les images dans la classe .banner */
+.banner-img {
+  border-radius: 10px;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Styles pour l'élément .banner-sombre */
+.banner-sombre {
+  background-color: #000000;
+  border-radius: 10px;
+  height: 100%;
+  left: 0;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* Styles pour les balises h1 dans la classe .banner */
+.banner h1 {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+/* Styles pour les écrans avec une largeur maximale de 1024px */
+@media screen and (max-width: 1024px) {
+  .banner {
+    height: 170px;
+  }
+  .banner h1 {
+    font-size: 32px;
+  }
+}
+
+/* Styles pour les écrans avec une largeur maximale de 640px */
+@media screen and (max-width: 640px) {
+  .banner {
+    height: 111px;
+  }
+  .banner h1 {
+    line-height: 20px;
+    top: 0;
+    left: 30px;
+    height: 100%;
+    text-align: left;
+    font-weight: 400;
+    font-size: 24px;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}

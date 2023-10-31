@@ -1,0 +1,27 @@
+/* Styles pour la classe .layout */
+.layout{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Styles pour la balise main */
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1280px;
+}
+
+/* Styles spécifiques pour les écrans ayant une largeur maximale de 1024 pixels (ajoutez des règles CSS spécifiques ici si nécessaire) */
+@media only screen and (max-width : 1024px) {
+
+}
+/* Styles spécifiques pour les écrans ayant une largeur maximale de 640 pixels (ajoutez des règles CSS spécifiques ici si nécessaire) */
+@media only screen and (max-width : 640px) {
+  
+}
